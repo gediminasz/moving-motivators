@@ -45,4 +45,5 @@ ui_lmb={
 
 [rendering]
 
+environment/default_clear_color=Color( 0.960784, 0.870588, 0.701961, 1 )
 environment/default_environment="res://default_env.tres"
