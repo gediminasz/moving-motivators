@@ -92,6 +92,7 @@ func _input(event):
         shift = picked_card.position - get_global_mouse_position()
 
     if not Input.is_action_pressed("ui_lmb") and picked_card:
+        picked_card.position = picked_card.position.round()
         picked_card = null
         shift = null
 
