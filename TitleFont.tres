@@ -1,9 +1,10 @@
 [gd_resource type="DynamicFont" load_steps=2 format=2]
 
 [sub_resource type="DynamicFontData" id=1]
-font_path = "res://OpenSans-Regular.ttf"
+font_path = "res://OpenSans-Bold.ttf"
 
 [resource]
-size = 24
-outline_color = Color( 0, 0, 0, 1 )
+size = 22
+outline_size = 2
+outline_color = Color( 0, 0, 0, 0.392157 )
 font_data = SubResource( 1 )
