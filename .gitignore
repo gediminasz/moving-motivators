@@ -1,0 +1,5 @@
+.DS_Store
+.import/
+*.translation
+dist
+export_presets.cfg
