@@ -44,7 +44,7 @@ margin_bottom = 216.0
 custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.803922, 0.521569, 0.247059, 1 )
 custom_constants/line_spacing = 6
-text = "1. Order the cards horizontally from least important to most important for you.
+text = "1. Order the 10 cards horizontally from least important to most important for you.
 2. Move the cards up or down if they are affected positively or negatively.
 3. When most of your important motivators go down or when the least important ones go up it might be time for reflection."
 autowrap = true

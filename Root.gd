@@ -71,7 +71,10 @@ func _ready():
         stylebox.bg_color = Color(properties["color"])
         card.get_node("Title").add_stylebox_override("normal", stylebox)
         card.get_node("Description").text = properties["description"]
-        card.position = $Center.position + Vector2(rng.randi_range(-480, 480), rng.randi_range(-300, 300))
+
+        var x = clamp(rng.randfn() * 75, -100, +100)
+        var y = clamp(rng.randfn() * 50, -100, +100)
+        card.position = $Center.position + Vector2(x, y)
         card.add_to_group("cards")
         add_child(card)
 
