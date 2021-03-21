@@ -29,7 +29,7 @@ margin_right = 320.0
 margin_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.803922, 0.521569, 0.247059, 1 )
-text = "How to play Moving Motivators	"
+text = "How to play Moving Motivators"
 __meta__ = {
 "_edit_use_anchors_": false
 }

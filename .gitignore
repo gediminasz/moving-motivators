@@ -3,3 +3,5 @@
 *.translation
 dist
 export_presets.cfg
+out
+out.zip
