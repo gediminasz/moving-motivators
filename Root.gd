@@ -77,8 +77,6 @@ func _ready():
 
 
 func _process(delta):
-    $Label.text = str(Engine.get_frames_per_second())
-
     if picked_card:
         picked_card.position = get_global_mouse_position() + shift
 
