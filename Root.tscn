@@ -8,3 +8,11 @@ script = ExtResource( 1 )
 [node name="Center" type="Position2D" parent="."]
 position = Vector2( 960, 540 )
 scale = Vector2( 10, 10 )
+
+[node name="Label" type="Label" parent="."]
+margin_right = 128.0
+margin_bottom = 64.0
+text = "Label"
+__meta__ = {
+"_edit_use_anchors_": false
+}

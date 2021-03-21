@@ -59,12 +59,13 @@ func _ready():
         card.get_node("Title").text = properties["title"]
         card.get_node("Description").text = properties["description"]
         card.position = $Center.position + Vector2(rng.randi_range(-480, 480), rng.randi_range(-300, 300))
-        card.rotation_degrees = rng.randi_range(-5, 5)
         card.add_to_group("cards")
         add_child(card)
 
 
 func _process(delta):
+    $Label.text = str(Engine.get_frames_per_second())
+
     if picked_card:
         picked_card.position = get_global_mouse_position() + shift
 
@@ -75,7 +76,6 @@ func _input(event):
     if target_card and Input.is_action_just_pressed("ui_lmb"):
         picked_card = target_card
         picked_card.raise()
-        picked_card.rotation_degrees = 0
         shift = picked_card.position - get_global_mouse_position()
 
     if not Input.is_action_pressed("ui_lmb") and picked_card:
