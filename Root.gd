@@ -81,7 +81,9 @@ func _ready():
 
 func _process(delta):
     if picked_card:
-        picked_card.position = get_global_mouse_position() + shift
+        var position = get_global_mouse_position() + shift
+        picked_card.position.x = clamp(position.x, 80, get_viewport_rect().size.x - 80)
+        picked_card.position.y = clamp(position.y, 80, get_viewport_rect().size.y - 80)
 
 
 func _input(event):
